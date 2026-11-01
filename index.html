@@ -197,6 +197,11 @@ body{font-size:21px}
 @keyframes mascot-breathe{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-7px) scale(1.015)}}
 @media(max-width:700px){#welcome-screen{padding:16px}.welcome-card{min-height:0;grid-template-columns:1fr;padding:32px 24px 20px;text-align:center}.welcome-title{font-size:38px}.welcome-subtitle{font-size:18px;margin:13px 0 20px}.welcome-visual{min-height:300px;order:-1}.welcome-mascot{width:min(390px,100%);max-height:350px}.welcome-caption{top:2%;right:5%;font-size:15px;max-width:190px;padding:9px 13px}}
 </style>
+<style id="entry-wallpaper-spacing">
+/* 进入学习页后先展示完整猫咪壁纸，再出现导航和课程内容 */
+.topbar{margin-top:100vh}
+@media(max-width:640px){.topbar{margin-top:88vh}}
+</style>
 </head>
 <body>
 <div class="ambient-effects" id="ambient-effects" aria-hidden="true"><div class="pointer-glow"></div></div>
@@ -559,4 +564,3 @@ updateProgress();
 </script>
 </body>
 </html>
-
